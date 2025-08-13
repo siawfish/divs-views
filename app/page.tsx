@@ -60,7 +60,7 @@ export default function Home() {
         setSubmitStatus('error');
         setSubmitMessage(result.error || 'Failed to send message. Please try again.');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
       setSubmitMessage('An unexpected error occurred. Please try again.');
     } finally {
@@ -146,7 +146,7 @@ export default function Home() {
             {/* Header */}
             <div className="relative bg-gradient-to-r from-gray-900 to-black text-white p-6 rounded-t-2xl">
               <h2 className="text-2xl font-bold">Get in Touch</h2>
-              <p className="text-gray-300 mt-1">We'd love to hear from you</p>
+              <p className="text-gray-300 mt-1">We&apos;d love to hear from you</p>
               
               {/* Enhanced Close Button */}
               <button

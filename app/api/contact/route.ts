@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email using Resend
-    const { data, error } = await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: 'Divs & Views <noreply@divsandviews.com>',
       to: ['hello@divsandviews.com'],
       cc: ['ceo@divsandviews.com'],
